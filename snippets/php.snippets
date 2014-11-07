@@ -214,3 +214,17 @@ snippet fun
 # $... = array (...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
+snippet php_svn
+	<?php
+	/**
+	 * @package ${1:packageName}
+	 * @filesource $HeadURL$
+	 * @author ${2:authorName} <${3:authorEmail}>
+	 * @version ${4:version} $Rev$
+	 *
+	 * Last commit:
+	 * $Author$
+	 * $Date$
+	 */
+
+	 ?>
