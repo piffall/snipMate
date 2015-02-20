@@ -214,17 +214,23 @@ snippet fun
 # $... = array (...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
+snippet php_git
+	<?php
+	/**
+	 * @package ${1:packageName}
+	 * @filesource `bufname('%')`
+	 * @author ${2:authorName} <${3:authorEmail}>
+	 * @version ${4:version}
+	 */
+	${5: // Code here}
+	?>
 snippet php_svn
 	<?php
 	/**
 	 * @package ${1:packageName}
-	 * @filesource $HeadURL$
+	 * @filesource `bufname('%')`
 	 * @author ${2:authorName} <${3:authorEmail}>
-	 * @version ${4:version} $Rev$
-	 *
-	 * Last commit:
-	 * $Author$
-	 * $Date$
+	 * @version ${4:version}
 	 */
-
-	 ?>
+	${5: // Code here}
+	?>
